@@ -1,0 +1,194 @@
+Only in base-3.14.12.6: base
+Only in base-3.14.12.6: bin
+Only in base-3.14.12.6/lib/darwin-x86: Cap5.bundle
+Only in base-3.14.12.6/lib/darwin-x86: libCom.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/libCom.a and base-3.14.12.6/lib/darwin-x86/libCom.a differ
+Only in base-3.14.12.6/lib/darwin-x86: libCom.dylib
+Only in base-3.14.12.6/lib/darwin-x86: libasHost.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/libasHost.a and base-3.14.12.6/lib/darwin-x86/libasHost.a differ
+Only in base-3.14.12.6/lib/darwin-x86: libasHost.dylib
+Only in base-3.14.12.6/lib/darwin-x86: libasIoc.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/libasIoc.a and base-3.14.12.6/lib/darwin-x86/libasIoc.a differ
+Only in base-3.14.12.6/lib/darwin-x86: libasIoc.dylib
+Only in base-3.14.12.6/lib/darwin-x86: libca.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/libca.a and base-3.14.12.6/lib/darwin-x86/libca.a differ
+Only in base-3.14.12.6/lib/darwin-x86: libca.dylib
+Only in base-3.14.12.6/lib/darwin-x86: libcas.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/libcas.a and base-3.14.12.6/lib/darwin-x86/libcas.a differ
+Only in base-3.14.12.6/lib/darwin-x86: libcas.dylib
+Only in base-3.14.12.6/lib/darwin-x86: libdbIoc.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/libdbIoc.a and base-3.14.12.6/lib/darwin-x86/libdbIoc.a differ
+Only in base-3.14.12.6/lib/darwin-x86: libdbIoc.dylib
+Only in base-3.14.12.6/lib/darwin-x86: libdbStaticHost.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/libdbStaticHost.a and base-3.14.12.6/lib/darwin-x86/libdbStaticHost.a differ
+Only in base-3.14.12.6/lib/darwin-x86: libdbStaticHost.dylib
+Only in base-3.14.12.6/lib/darwin-x86: libdbStaticIoc.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/libdbStaticIoc.a and base-3.14.12.6/lib/darwin-x86/libdbStaticIoc.a differ
+Only in base-3.14.12.6/lib/darwin-x86: libdbStaticIoc.dylib
+Only in base-3.14.12.6/lib/darwin-x86: libdbtoolsIoc.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/libdbtoolsIoc.a and base-3.14.12.6/lib/darwin-x86/libdbtoolsIoc.a differ
+Only in base-3.14.12.6/lib/darwin-x86: libdbtoolsIoc.dylib
+Only in base-3.14.12.6/lib/darwin-x86: libgdd.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/libgdd.a and base-3.14.12.6/lib/darwin-x86/libgdd.a differ
+Only in base-3.14.12.6/lib/darwin-x86: libgdd.dylib
+Only in base-3.14.12.6/lib/darwin-x86: libmiscIoc.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/libmiscIoc.a and base-3.14.12.6/lib/darwin-x86/libmiscIoc.a differ
+Only in base-3.14.12.6/lib/darwin-x86: libmiscIoc.dylib
+Only in base-3.14.12.6/lib/darwin-x86: librecIoc.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/librecIoc.a and base-3.14.12.6/lib/darwin-x86/librecIoc.a differ
+Only in base-3.14.12.6/lib/darwin-x86: librecIoc.dylib
+Only in base-3.14.12.6/lib/darwin-x86: libregistryIoc.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/libregistryIoc.a and base-3.14.12.6/lib/darwin-x86/libregistryIoc.a differ
+Only in base-3.14.12.6/lib/darwin-x86: libregistryIoc.dylib
+Only in base-3.14.12.6/lib/darwin-x86: librsrvIoc.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/librsrvIoc.a and base-3.14.12.6/lib/darwin-x86/librsrvIoc.a differ
+Only in base-3.14.12.6/lib/darwin-x86: librsrvIoc.dylib
+Only in base-3.14.12.6/lib/darwin-x86: libsoftDevIoc.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/libsoftDevIoc.a and base-3.14.12.6/lib/darwin-x86/libsoftDevIoc.a differ
+Only in base-3.14.12.6/lib/darwin-x86: libsoftDevIoc.dylib
+Only in base-3.14.12.6/lib/darwin-x86: libtestDevIoc.3.14.12.dylib
+Binary files base-3.14.12.6-static/lib/darwin-x86/libtestDevIoc.a and base-3.14.12.6/lib/darwin-x86/libtestDevIoc.a differ
+Only in base-3.14.12.6/lib/darwin-x86: libtestDevIoc.dylib
+Binary files base-3.14.12.6-static/lib/perl/5.18.2/darwin-thread-multi-2level/Cap5.bundle and base-3.14.12.6/lib/perl/5.18.2/darwin-thread-multi-2level/Cap5.bundle differ
+diff -ur base-3.14.12.6-static/src/as/asLibRoutines.c base-3.14.12.6/src/as/asLibRoutines.c
+--- base-3.14.12.6-static/src/as/asLibRoutines.c	2016-12-12 14:43:44.000000000 +0100
++++ base-3.14.12.6/src/as/asLibRoutines.c	2016-12-22 22:30:48.000000000 +0100
+@@ -16,6 +16,8 @@
+ #include <string.h>
+ #include <ctype.h>
+ 
++__asm__(".symver memcpy,memcpy@GLIBC_2.2.5");
++
+ #include "epicsStdioRedirect.h"
+ #include "dbDefs.h"
+ #include "epicsThread.h"
+diff -ur base-3.14.12.6-static/src/catools/caget.c base-3.14.12.6/src/catools/caget.c
+--- base-3.14.12.6-static/src/catools/caget.c	2016-12-12 14:43:44.000000000 +0100
++++ base-3.14.12.6/src/catools/caget.c	2016-12-22 22:30:31.000000000 +0100
+@@ -35,6 +35,8 @@
+ #include <cadef.h>
+ #include <epicsGetopt.h>
+ 
++__asm__(".symver memcpy,memcpy@GLIBC_2.2.5");
++
+ #include "tool_lib.h"
+ 
+ #define VALID_DOUBLE_DIGITS 18  /* Max usable precision for a double */
+diff -ur base-3.14.12.6-static/src/db/dbCa.c base-3.14.12.6/src/db/dbCa.c
+--- base-3.14.12.6-static/src/db/dbCa.c	2016-12-12 14:43:44.000000000 +0100
++++ base-3.14.12.6/src/db/dbCa.c	2016-12-22 22:30:04.000000000 +0100
+@@ -17,6 +17,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <errno.h>
++__asm__(".symver memcpy,memcpy@GLIBC_2.2.5");
+ 
+ #include "dbDefs.h"
+ #include "epicsMutex.h"
+diff -ur base-3.14.12.6-static/src/db/dbEvent.c base-3.14.12.6/src/db/dbEvent.c
+--- base-3.14.12.6-static/src/db/dbEvent.c	2016-12-12 14:43:44.000000000 +0100
++++ base-3.14.12.6/src/db/dbEvent.c	2016-12-22 22:29:42.000000000 +0100
+@@ -22,6 +22,8 @@
+ #include <errno.h>
+ #include <limits.h>
+ 
++__asm__(".symver memcpy,memcpy@GLIBC_2.2.5");
++
+ #include "epicsAssert.h"
+ #include "cantProceed.h"
+ #include "dbDefs.h"
+diff -ur base-3.14.12.6-static/src/dbStatic/dbLexRoutines.c base-3.14.12.6/src/dbStatic/dbLexRoutines.c
+--- base-3.14.12.6-static/src/dbStatic/dbLexRoutines.c	2016-12-12 14:43:44.000000000 +0100
++++ base-3.14.12.6/src/dbStatic/dbLexRoutines.c	2016-12-22 22:24:57.000000000 +0100
+@@ -17,6 +17,8 @@
+ #include <stdio.h>
+ #include <string.h>
+ 
++__asm__(".symver memcpy,memcpy@GLIBC_2.2.5");
++
+ #include "dbmf.h"
+ 
+ #include "dbDefs.h"
+diff -ur base-3.14.12.6-static/src/gdd/aitGen.c base-3.14.12.6/src/gdd/aitGen.c
+--- base-3.14.12.6-static/src/gdd/aitGen.c	2016-12-12 14:43:44.000000000 +0100
++++ base-3.14.12.6/src/gdd/aitGen.c	2016-12-22 22:28:55.000000000 +0100
+@@ -128,6 +128,7 @@
+ 	/* generate basic conversion functions */
+ 
+ 	pr(dfd,"\n");
++        pr(dfd,"__asm__(\".symver memcpy,memcpy@GLIBC_2.2.5\");\n");
+ 
+ 	/* generate each group - to/from/normal */
+ 	for(k=0;k<3;k++)
+diff -ur base-3.14.12.6-static/src/libCom/calc/calcPerform.c base-3.14.12.6/src/libCom/calc/calcPerform.c
+--- base-3.14.12.6-static/src/libCom/calc/calcPerform.c	2016-12-12 14:43:44.000000000 +0100
++++ base-3.14.12.6/src/libCom/calc/calcPerform.c	2016-12-22 22:23:48.000000000 +0100
+@@ -16,6 +16,8 @@
+ #include <stdio.h>
+ #include <string.h>
+ 
++__asm__(".symver memcpy,memcpy@GLIBC_2.2.5");
++
+ #define epicsExportSharedSymbols
+ #include "osiUnistd.h"
+ #include "dbDefs.h"
+diff -ur base-3.14.12.6-static/src/libCom/calc/postfix.c base-3.14.12.6/src/libCom/calc/postfix.c
+--- base-3.14.12.6-static/src/libCom/calc/postfix.c	2016-12-12 14:43:44.000000000 +0100
++++ base-3.14.12.6/src/libCom/calc/postfix.c	2016-12-22 22:23:34.000000000 +0100
+@@ -17,6 +17,8 @@
+ #include <string.h>
+ #include <ctype.h>
+ 
++__asm__(".symver memcpy,memcpy@GLIBC_2.2.5");
++
+ #define epicsExportSharedSymbols
+ #include "dbDefs.h"
+ #include "epicsStdlib.h"
+diff -ur base-3.14.12.6-static/src/libCom/logClient/logClient.c base-3.14.12.6/src/libCom/logClient/logClient.c
+--- base-3.14.12.6-static/src/libCom/logClient/logClient.c	2016-12-12 14:43:44.000000000 +0100
++++ base-3.14.12.6/src/libCom/logClient/logClient.c	2016-12-22 22:23:15.000000000 +0100
+@@ -21,6 +21,8 @@
+ #include <string.h>
+ #include <stdio.h>
+ 
++__asm__(".symver memcpy,memcpy@GLIBC_2.2.5");
++
+ #define epicsExportSharedSymbols
+ #include "dbDefs.h"
+ #include "epicsEvent.h"
+diff -ur base-3.14.12.6-static/src/libCom/ring/epicsRingBytes.c base-3.14.12.6/src/libCom/ring/epicsRingBytes.c
+--- base-3.14.12.6-static/src/libCom/ring/epicsRingBytes.c	2016-12-12 14:43:44.000000000 +0100
++++ base-3.14.12.6/src/libCom/ring/epicsRingBytes.c	2016-12-22 22:22:24.000000000 +0100
+@@ -17,6 +17,8 @@
+ #include <stddef.h>
+ #include <stdio.h>
+ 
++__asm__(".symver memcpy,memcpy@GLIBC_2.2.5");
++
+ #define epicsExportSharedSymbols
+ #include "dbDefs.h"
+ #include "cantProceed.h"
+diff -ur base-3.14.12.6-static/src/rsrv/camessage.c base-3.14.12.6/src/rsrv/camessage.c
+--- base-3.14.12.6-static/src/rsrv/camessage.c	2016-12-12 14:43:44.000000000 +0100
++++ base-3.14.12.6/src/rsrv/camessage.c	2016-12-22 22:22:00.000000000 +0100
+@@ -42,6 +42,8 @@
+ 
+ #include "net_convert.h"
+ 
++__asm__(".symver memcpy,memcpy@GLIBC_2.2.5");
++
+ #define epicsExportSharedSymbols
+ #include "rsrv.h"
+ #include "server.h"
+diff -ur base-3.14.12.6-static/src/rsrv/caservertask.c base-3.14.12.6/src/rsrv/caservertask.c
+--- base-3.14.12.6-static/src/rsrv/caservertask.c	2016-12-12 14:43:44.000000000 +0100
++++ base-3.14.12.6/src/rsrv/caservertask.c	2016-12-22 22:21:30.000000000 +0100
+@@ -35,6 +35,8 @@
+ #include "dbCommon.h"
+ #include "epicsStdioRedirect.h"
+ 
++__asm__(".symver memcpy,memcpy@GLIBC_2.2.5");
++
+ #define epicsExportSharedSymbols
+ #include "rsrv.h"
+ #define GLBLSOURCE

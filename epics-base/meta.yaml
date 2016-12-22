@@ -9,6 +9,7 @@ source:
     patches:
         - config_site.diff [not win]
         - config_common.diff [not win]
+        - memcpy.patch [linux]
 
 build:
   number: 1
