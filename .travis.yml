@@ -1,4 +1,4 @@
-sudo: false
+sudo: required
 
 language: cpp
 
@@ -12,6 +12,14 @@ matrix:
       env: CONDA_PY=2.7
     - os: osx
       env: CONDA_PY=3.5
+
+before_install:
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
+        sudo apt-get install gcc-4.4 g++-4.4
+        sudo update-alternatives --set gcc /usr/bin/gcc-4.4
+        sudo update-alternatives --set g++ /usr/bin/g++-4.4
+        gcc -v
+    fi
 
 install:
   # Set the anaconda environment
