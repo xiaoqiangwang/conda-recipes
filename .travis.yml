@@ -42,6 +42,7 @@ install:
   - hash -r
   - conda config --set always_yes yes --set changeps1 no
   - conda update -q --all
+  - conda config --add channels defaults
   - conda install conda-build numpy anaconda-client
   # build
   - conda build -c $CONDA_CHANNEL --skip-existing brotli
@@ -50,6 +51,7 @@ install:
   - conda build -c $CONDA_CHANNEL --skip-existing pyepics
   - conda build -c $CONDA_CHANNEL --skip-existing h5py
   - conda build -c $CONDA_CHANNEL --skip-existing lzf
+  - conda build -c $CONDA_CHANNEL --skip-existing bottle
   - '[[ "$TRAVIS_OS_NAME" != "linux" ]] || conda build -c $CONDA_CHANNEL --skip-existing zeromq'
   - '[[ "$TRAVIS_OS_NAME" != "linux" ]] || conda build -c $CONDA_CHANNEL --skip-existing cx_oracle'
 
