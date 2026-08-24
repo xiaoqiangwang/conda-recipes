@@ -6,7 +6,7 @@ EPICS_HOST_ARCH=$(perl src/tools/EpicsHostArch.pl)
 
 # EPICS assumes gcc suit has /usr/bin prefix.
 # conda-build define CC
-GNU_DIR=$(dirname $(dirname $CC))
+GNU_DIR=$(dirname $(dirname $(which $CC)))
 CMPLR_PREFIX=$(basename ${CC%-*})-
 cat << EOF >> configure/os/CONFIG_SITE.Common.linuxCommon
 GNU_DIR=$GNU_DIR
