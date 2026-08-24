@@ -15,9 +15,10 @@ source:
         - cas.diff
         - darwin-aarch64.diff
         - linux-aarch64.diff
+        - tsSLList.diff
 
 build:
-  number: 5
+  number: 6
 
 requirements:
   build:
