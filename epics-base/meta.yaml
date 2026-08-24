@@ -16,6 +16,9 @@ source:
         - darwin-aarch64.diff
         - linux-aarch64.diff
         - tsSLList.diff
+        - flex.diff
+        - dbStatic.diff
+        - iocLogServer.diff
 
 build:
   number: 6
