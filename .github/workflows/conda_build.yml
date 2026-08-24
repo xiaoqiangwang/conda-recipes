@@ -30,7 +30,6 @@ jobs:
         uses: conda-incubator/setup-miniconda@v4
         with:
           auto-update-conda: false
-          conda-build-version: 3
           auto-activate-base: true
           activate-environment: ""
       - name: Dump environments
