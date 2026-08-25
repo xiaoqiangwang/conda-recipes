@@ -18,7 +18,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-          os: ["ubuntu-latest", "macos-latest"]
+          os: ["ubuntu-latest", "macos-latest", "windows-latest"]
     env:
       MY_CONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
       MY_CONDA_CHANNEL: "paulscherrerinstitute"
@@ -37,13 +37,6 @@ jobs:
             printenv
             mkdir packages
             conda info
-      - name: Setup Xcode and SDK on macOS
-        if: runner.os == 'macOS'
-        run: |
-            MACOS_SDK=MacOSX10.9.sdk
-            curl -OL https://github.com/phracker/MacOSX-SDKs/releases/download/10.15/${MACOS_SDK}.tar.xz
-            sudo tar xf ${MACOS_SDK}.tar.xz -C /opt
-            printf "CONDA_BUILD_SYSROOT:\n    - /opt/${MACOS_SDK}\n" >> conda_build_config.yaml
       - name: Setup docker
         if: runner.os == 'Linux'
         run: |
@@ -51,7 +44,7 @@ jobs:
             echo "MY_CONDA_CMD=./conda_in_docker.sh" >> $GITHUB_ENV
       - name: Build ${{ runner.os }} Packages
         run: |
-            ${MY_CONDA_CMD} install anaconda-client
+            ${MY_CONDA_CMD} install conda-build anaconda-client
             ${MY_CONDA_CMD} info
             [[ -z "$MY_CONDA_TOKEN" ]] || ${MY_CONDA_CMD} config --set anaconda_upload yes
             [[ -n "$MY_CONDA_TOKEN" ]] || MY_CONDA_TOKEN=placeholder
