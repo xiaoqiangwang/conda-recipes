@@ -16,7 +16,10 @@ python pre-build.py
 
 echo Building at %CD%
 make clean
-make CROSS_COMPILER_TARGET_ARCHS=%EPICS_HOST_ARCH%-static
+make -j %CPU_COUNT% CROSS_COMPILER_TARGET_ARCHS=%EPICS_HOST_ARCH%-static
+if errorlevel 1 (
+    exit /b 1
+)
 
 # deal with env export
 mkdir %PREFIX%\etc\conda\activate.d
