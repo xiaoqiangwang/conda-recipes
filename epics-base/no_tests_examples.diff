@@ -1,0 +1,104 @@
+diff -Nur '--exclude=O.*' base-7.0.10.orig/Makefile base-7.0.10/Makefile
+--- base-7.0.10.orig/Makefile	2026-01-30 21:50:34.000000000 +0100
++++ base-7.0.10/Makefile	2026-08-25 08:56:41.946458000 +0200
+@@ -16,9 +16,6 @@
+ DIRS += configure src
+ src_DEPEND_DIRS = configure
+ 
+-DIRS += test
+-test_DEPEND_DIRS = src
+-
+ DIRS += modules
+ modules_DEPEND_DIRS = src
+ 
+diff -Nur '--exclude=O.*' base-7.0.10.orig/modules/ca/src/Makefile base-7.0.10/modules/ca/src/Makefile
+--- base-7.0.10.orig/modules/ca/src/Makefile	2026-01-30 21:50:34.000000000 +0100
++++ base-7.0.10/modules/ca/src/Makefile	2026-08-25 09:01:09.804450000 +0200
+@@ -17,9 +17,6 @@
+ DIRS += tools
+ tools_DEPEND_DIRS = client
+ 
+-DIRS += perl
+-perl_DEPEND_DIRS = client
+-
+ DIRS += template
+ 
+ include $(TOP)/configure/RULES_DIRS
+diff -Nur '--exclude=O.*' base-7.0.10.orig/modules/database/Makefile base-7.0.10/modules/database/Makefile
+--- base-7.0.10.orig/modules/database/Makefile	2026-01-30 21:50:34.000000000 +0100
++++ base-7.0.10/modules/database/Makefile	2026-08-25 08:57:31.670454000 +0200
+@@ -12,7 +12,4 @@
+ 
+ DIRS += src
+ 
+-DIRS += test
+-test_DEPEND_DIRS = src
+-
+ include $(TOP)/configure/RULES_DIRS
+diff -Nur '--exclude=O.*' base-7.0.10.orig/modules/libcom/Makefile base-7.0.10/modules/libcom/Makefile
+--- base-7.0.10.orig/modules/libcom/Makefile	2026-01-30 21:50:34.000000000 +0100
++++ base-7.0.10/modules/libcom/Makefile	2026-08-25 08:57:40.773487000 +0200
+@@ -18,7 +18,4 @@
+ DIRS += vxWorks
+ vxWorks_DEPEND_DIRS = src
+ 
+-DIRS += test
+-test_DEPEND_DIRS = RTEMS vxWorks
+-
+ include $(TOP)/configure/RULES_DIRS
+diff -Nur '--exclude=O.*' base-7.0.10.orig/modules/normativeTypes/Makefile base-7.0.10/modules/normativeTypes/Makefile
+--- base-7.0.10.orig/modules/normativeTypes/Makefile	2025-12-15 17:18:01.000000000 +0100
++++ base-7.0.10/modules/normativeTypes/Makefile	2026-08-25 08:57:50.441601000 +0200
+@@ -4,8 +4,6 @@
+ DIRS += configure
+ DIRS += src
+ src_DEPEND_DIRS = configure
+-DIRS += test
+-test_DEPEND_DIRS = src
+ 
+ include $(TOP)/configure/RULES_TOP
+ 
+diff -Nur '--exclude=O.*' base-7.0.10.orig/modules/pvAccess/Makefile base-7.0.10/modules/pvAccess/Makefile
+--- base-7.0.10.orig/modules/pvAccess/Makefile	2025-12-15 19:54:59.000000000 +0100
++++ base-7.0.10/modules/pvAccess/Makefile	2026-08-25 09:00:11.122593000 +0200
+@@ -17,15 +17,4 @@
+ DIRS += pvtoolsSrc
+ pvtoolsSrc_DEPEND_DIRS = src src/ca
+ 
+-DIRS += testApp
+-testApp_DEPEND_DIRS = src
+-
+-
+-DIRS += testCa
+-testCa_DEPEND_DIRS = src src/ca
+-
+-
+-DIRS += examples
+-examples_DEPEND_DIRS += src src/ca
+-
+ include $(TOP)/configure/RULES_TOP
+diff -Nur '--exclude=O.*' base-7.0.10.orig/modules/pvData/Makefile base-7.0.10/modules/pvData/Makefile
+--- base-7.0.10.orig/modules/pvData/Makefile	2025-12-15 18:44:53.000000000 +0100
++++ base-7.0.10/modules/pvData/Makefile	2026-08-25 09:00:35.338450000 +0200
+@@ -8,10 +8,4 @@
+ DIRS += src
+ src_DEPEND_DIRS = configure
+ 
+-DIRS += testApp
+-testApp_DEPEND_DIRS = src
+-
+-DIRS += examples
+-examples_DEPEND_DIRS = src
+-
+ include $(TOP)/configure/RULES_TOP
+diff -Nur '--exclude=O.*' base-7.0.10.orig/modules/pvDatabase/Makefile base-7.0.10/modules/pvDatabase/Makefile
+--- base-7.0.10.orig/modules/pvDatabase/Makefile	2025-02-21 22:29:09.000000000 +0100
++++ base-7.0.10/modules/pvDatabase/Makefile	2026-08-25 09:00:26.755467000 +0200
+@@ -6,7 +6,4 @@
+ DIRS += src
+ src_DEPEND_DIRS = configure
+ 
+-DIRS += test
+-test_DEPEND_DIRS = src
+-
+ include $(TOP)/configure/RULES_TOP

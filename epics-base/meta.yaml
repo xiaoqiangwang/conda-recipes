@@ -1,39 +1,28 @@
-{% set version = "3.14.12.8" %}
+{% set version = "7.0.10" %}
 
 package:
-    name: epics-base
-    version: {{ version }}
+  name: epics-base
+  version: {{ version }}
 
 source:
-    fn: baseR{{version}}.tar.gz
-    url: https://epics.anl.gov/download/base/baseR{{version}}.tar.gz
-    patches:
-        - config_site.diff # [not win]
-        - config_common.diff # [not win]
-        - rules_build.diff # [not win]
-        - config_readline.diff # [linux]
-        - cas.diff
-        - darwin-aarch64.diff
-        - linux-aarch64.diff
-        - tsSLList.diff
-        - flex.diff
-        - dbStatic.diff
-        - iocLogServer.diff
+  - url: https://epics.anl.gov/download/base/base-{{version}}.tar.gz
+    patches: no_tests_examples.diff
+  - url: https://github.com/epics-modules/pcas/archive/refs/tags/v4.13.3.tar.gz
+    folder: modules/pcas
+    patches: pcas.diff
 
 build:
-  number: 6
+  number: 1
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - python # [win]
-    - make # [not win]
-    - m2-make # [win]
+    - make
+    - perl
     - m2-patch # [win]
-    - perl # [win]
 
 about:
-    home: https://epics.anl.gov/
-    license: Epics Open License
-    summary: EPICS Base Library
+  home: https://epics.anl.gov/
+  license: Epics Open License
+  summary: EPICS Base Library
