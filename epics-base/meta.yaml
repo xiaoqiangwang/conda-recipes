@@ -6,7 +6,9 @@ package:
 
 source:
   - url: https://epics.anl.gov/download/base/base-{{version}}.tar.gz
-    patches: no_tests_examples.diff
+    patches:
+      - no_tests_examples.diff
+      - config_site.diff # [not win]
   - url: https://github.com/epics-modules/pcas/archive/refs/tags/v4.13.3.tar.gz
     folder: modules/pcas
     patches: pcas.diff
