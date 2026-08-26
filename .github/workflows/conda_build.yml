@@ -38,7 +38,7 @@ jobs:
             mkdir packages
             conda info
       - name: Choco install VS2017
-        if: runner.os != 'Windows'
+        if: runner.os == 'Windows'
         run: choco install visualstudio2017-workload-vctools
       - name: Setup docker on Linux
         if: runner.os == 'Linux'
