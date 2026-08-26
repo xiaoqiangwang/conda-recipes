@@ -20,9 +20,11 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - make
-    - perl
+    - python # [win]
+    - make # [not win]
+    - m2-make # [win]
     - m2-patch # [win]
+    - perl # [win]
 
 about:
   home: https://epics.anl.gov/
