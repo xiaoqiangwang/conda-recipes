@@ -9,9 +9,9 @@ source:
     patches:
       - no_tests_examples.diff
       - config_site.diff # [not win]
+      - pcas.diff
   - url: https://github.com/epics-modules/pcas/archive/refs/tags/v4.13.3.tar.gz
     folder: modules/pcas
-    patches: pcas.diff
 
 build:
   number: 1
