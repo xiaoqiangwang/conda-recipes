@@ -20,11 +20,27 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - make
     - python # [win]
-    - make # [not win]
-    - m2-make # [win]
     - m2-patch # [win]
     - perl # [win]
+
+test:
+  commands:
+    - test -f $EPICS_BASE/include/cadef.h # [not win]
+    - test -f $EPICS_BASE/include/casdef.h # [not win]
+    - test -f $EPICS_BASE/lib/$EPICS_HOST_ARCH/libca.so # [linux]
+    - test -f $EPICS_BASE/lib/$EPICS_HOST_ARCH/libca.dylib # [osx]
+    - test -f $EPICS_BASE/lib/$EPICS_HOST_ARCH/libcas.so # [linux]
+    - test -f $EPICS_BASE/lib/$EPICS_HOST_ARCH/libcas.dylib # [osx]
+    - test -f $EPICS_BASE/lib/$EPICS_HOST_ARCH/libca.a # [not win]
+    - test -f $EPICS_BASE/lib/$EPICS_HOST_ARCH/libcas.a # [not win]
+    - if not exist %EPICS_BASE%/include/cadef.h exit 1 # [win]
+    - if not exist %EPICS_BASE%/include/casdef.h exit 1 # [win]
+    - if not exist %EPICS_BASE%/bin/%EPICS_HOST_ARCH%/ca.dll exit 1 # [win]
+    - if not exist %EPICS_BASE%/bin/%EPICS_HOST_ARCH%/cas.dll exit 1 # [win]
+    - if not exist %EPICS_BASE%/lib/%EPICS_HOST_ARCH%-static/ca.lib exit 1 # [win]
+    - if not exist %EPICS_BASE%/lib/%EPICS_HOST_ARCH%-static/cas.lib exit 1 # [win]
 
 about:
   home: https://epics.anl.gov/
