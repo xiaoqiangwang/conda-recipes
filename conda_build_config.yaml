@@ -6,16 +6,16 @@ python:
     - 3.13
     - 3.14
 c_compiler:
-    - vs2017 # [win]
-    - vs2017 # [win]
-    - vs2017 # [win]
+    - vs2022 # [win]
+    - vs2022 # [win]
+    - vs2022 # [win]
     - vs2022 # [win]
     - vs2022 # [win]
     - vs2022 # [win]
 cxx_compiler:
-    - vs2017 # [win]
-    - vs2017 # [win]
-    - vs2017 # [win]
+    - vs2022 # [win]
+    - vs2022 # [win]
+    - vs2022 # [win]
     - vs2022 # [win]
     - vs2022 # [win]
     - vs2022 # [win]
