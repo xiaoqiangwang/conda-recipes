@@ -23,7 +23,6 @@ requirements:
     - make # [not win]
     - python # [win]
     - m2-make # [win]
-    - m2-patch # [win]
     - perl # [win]
 
 test:
