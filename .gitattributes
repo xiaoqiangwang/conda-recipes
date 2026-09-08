@@ -1,0 +1,4 @@
+# Preserve patch files lineending
+*.diff -text
+*.patch -text
+
