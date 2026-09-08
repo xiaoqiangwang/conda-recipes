@@ -6,11 +6,13 @@ package:
 
 source:
   - url: https://epics.anl.gov/download/base/base-{{version}}.tar.gz
+    sha256: 44193e962793de514ead442e9b5096a13109f1ee275f131995826468aa89b839
     patches:
       - no_tests_examples.diff
       - config_site.diff # [not win]
       - pcas.diff
   - url: https://github.com/epics-modules/pcas/archive/refs/tags/v4.13.3.tar.gz
+    sha256: 5004e39339c8e592fcb9b4275c84143635c6e688c0fbe01f17dafe19850398a0
     folder: modules/pcas
 
 build:
