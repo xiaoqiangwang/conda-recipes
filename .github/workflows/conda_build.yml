@@ -46,6 +46,10 @@ jobs:
         run: |
             ${MY_CONDA_CMD} install conda-build anaconda-client
             ${MY_CONDA_CMD} info
+      - name: Exclude conda-bld from Defender
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: Add-MpPreference -ExclusionPath "C:\Miniconda\conda-bld"
       - name: Build ${{ runner.os }} packages
         run: |
             [[ -z "$MY_CONDA_TOKEN" ]] || ${MY_CONDA_CMD} config --set anaconda_upload yes
